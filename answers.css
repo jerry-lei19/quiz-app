@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+body{
+    background-color: tan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    background-color: rgb(212, 194, 194);
+    border-radius: 36px;
+    width:90vw ;
+    height:fit-content;
+    padding:15px;
+    
+
+}
+h1{
+    text-align: center;
+}
+p,.choices{
+    margin-top: 10px;
+}
+#quiz-card1,#quiz-card2,#quiz-card3,#quiz-card4,#quiz-card5{
+    width: 80vw;
+    height: fit-content;
+    border-radius:15px ;
+    padding: 15px;
+    margin: 3px;
+    background-color: aliceblue;
+}

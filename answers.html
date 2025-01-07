@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Answers</title>
+<link rel="stylesheet" href="answers.css">
+</head>
+<body>
+    <div class="cont">
+        <h1>Quiz Answers</h1>
+        <div id="quiz-card1">
+            <p>1. What is my name?</p>
+            <div class="choices">
+                <p>Your answer: <span id="answer1"></span></p>
+                <p>Correct answer:<span id="correct-ans1" >Uranus</span></p>
+            </div>
+        </div>
+        <div id="quiz-card2">
+            <p>2. What is my age?</p>
+            <div class="choices">
+                <p>Your answer: <span id="answer2"></span></p>
+                <p>Correct answer:<span id="correct-ans2" >Salvador Dalí</span> </p>
+            </div>
+        </div>
+        <div id="quiz-card3">
+            <p>3. Where do I live?</p>
+            <div class="choices">
+                <p>Your answer: <span id="answer3"></span></p>
+                <p>Correct answer:<span id="correct-ans3" >Stapes (stirrup)</span> </p>
+            </div>
+        </div>
+        <div id="quiz-card4">
+            <p>4. Which university did I go to?</p>
+            <div class="choices">
+                <p>Your answer: <span id="answer4"></span></p>
+                <p>Correct answer: <span id="correct-ans4" >Hypertext Transfer Protocol</span></p>
+            </div>
+        </div>
+        <div id="quiz-card5">
+            <p>5. What is my name?</p>
+            <div class="choices">
+                <p>Your answer: <span id="answer5"></span></p>
+                <p>Correct answer: <span id="correct-ans5" >South Africa (11 official languages)
+
+                </span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        
+        
+        for (let i = 1; i <= 5; i++) {
+        const card=document.getElementById(`quiz-card${i}`);
+        const correct=document.getElementById(`correct-ans${i}`); 
+        const answer = sessionStorage.getItem(`indoor-outdoor${i}`);
+        const ans=document.getElementById(`answer${i}`);
+        ans.textContent=answer;
+        if(answer==correct.textContent){
+            card.style.backgroundColor=" rgb(34, 167, 34,.5)";
+            
+        }
+        else{
+            card.style.backgroundColor=" rgb(220, 27, 27,.5)";
+        }
+    }
+    </script>
+</body>
+</html>

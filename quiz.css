@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: brown;
+}
+.start{
+    background-color: aqua;
+    
+    height: 100vh;
+
+}
+.cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.quiz{
+    color: tan;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.time{
+    height:fit-content;
+    width:fit-content;
+    color:tan;
+    font-size: 30px;
+    align-items: center;
+}
+.start-quiz{
+    color: tan;
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
